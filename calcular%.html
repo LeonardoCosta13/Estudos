@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluções</title>
+
+    <script>
+
+    function calcularPercentual(quantidadeVotos,totalVotos) {
+        return (quantidadeVotos / totalVotos) * 100;
+    }
+       
+       
+       var brancos = Number(prompt("A quantidade de votos brancos é"));
+       var nulos = Number(prompt("A quantidade de votos nulos é"));
+       var variaveis = Number(prompt("A quantidade de votos variaveis é"));
+       var resultado = brancos + nulos + variaveis;
+
+       var resultadoBrancos = calcularPercentual(brancos,resultado);
+       var resultadoNulos = calcularPercentual(nulos,resultado);
+       var resultadoVariaveis = calcularPercentual(variaveis,resultado);
+
+       document.write(`O resultado dos votos brancos é ${resultadoBrancos}%</br>`);
+       document.write(`O resultado dos votos nulos é ${resultadoNulos}% </br>`);
+       document.write(`O resultado dos votos variaveios é ${resultadoVariaveis}%</br>`);
+       document.write(`O total de votos é ${resultado} </br>`);
+    
+        </script>
+</head>
+<body>
+   
+</body>
+</html>
